@@ -22,7 +22,7 @@ class receiver:
         self.client.loop_start()
         self.client.subscribe("esp32-ids-ubco/temperature")
         self.client.on_message = self.on_message
-        time.sleep(5000)
+        time.sleep(2500)
         self.client.loop_end()
 
 
