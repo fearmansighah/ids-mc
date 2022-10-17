@@ -66,7 +66,7 @@ void temperatureOut(int meanReadingInt)
 
         */
 
-        // thermistors/thermocouples are basically variable resistors
+        // thermistors are basically variable resistors
         // finding value of thermistors resistance from the voltage divider:
         tempr = tempr / (3.289 - tempr) * 10000;
 
