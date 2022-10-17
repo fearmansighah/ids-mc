@@ -58,6 +58,14 @@ void temperatureOut(int meanReadingInt)
         // convert mV to V
         tempr = temper / 1000.0;
 
+        /*
+        THE FOLLOWING BLOCK OF CODE IS WHAT YOU NEED TO FIGURE OUT
+        I HAVE PROVIDED AN EXAMPLE FOR THE THERMISTOR I HAVE USED IN THE PAST
+
+        IT MAY NOT BE THE SAME FOR THE THERMOCOUPLE WE WILL BE USING ASK SOFTWARE LEAD FOR SPECS
+
+        */
+
         // thermistors/thermocouples are basically variable resistors
         // finding value of thermistors resistance from the voltage divider:
         tempr = tempr / (3.289 - tempr) * 10000;
